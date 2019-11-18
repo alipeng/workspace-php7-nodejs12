@@ -25,6 +25,8 @@ RUN set -xe \
         groff \
         python \
         py-pip \
+        zip \
+        jq \
     && curl -sS https://getcomposer.org/installer | php -- \
             --filename=composer \
             --install-dir=/usr/local/bin \
@@ -53,8 +55,6 @@ RUN addgroup -g 1000 node \
         make \
         python \
         tar \
-        zip \
-        jq \
   # gpg keys listed at https://github.com/nodejs/node#release-keys
   && for key in \
     94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
