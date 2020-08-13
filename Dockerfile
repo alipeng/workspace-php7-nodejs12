@@ -21,9 +21,8 @@ RUN set -xe \
         tree \
         tzdata \
         less \
-	      rsync \
+        rsync \
         groff \
-        python \
         py-pip \
         zip \
         jq \
